@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+
+@font-face {
+	font-family:'nanum-myongjo';
+	font-style:normal;
+	font-weight:400;
+	src:local(※),url(../font/nanum-myongjo.woff) format('woff');
+}
+
+@font-face {
+	font-family:'nanum-myongjo';
+	font-style:normal;
+	font-weight:700;
+	src:local(※),url(../font/nanum-myongjo-bold.woff) format('woff');
+}
+
+
+/* Reset */
+body,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,form,fieldset,p,input,textarea,i,em,strong,b,a,button,th,td{margin:0;padding:0;font-style:normal;}
+h1,h2,h3,h4,h5,strong {font-weight:normal;}
+h1,h2,h3,h4,h5,h6 {font-size:inherit;}
+b {}
+*,*:before,*:after {box-sizing:border-box;word-break: keep-all;}
+img,fieldset,iframe,button{border:0;}
+ul,li{list-style:none}
+input[type="text"],input[type="password"],textarea {-webkit-appearance:none;}
+input,select,label,textarea{vertical-align:middle;}
+input,textarea,button {font-size:inherit;font-family:inherit;color:inherit;line-height:inherit;}
+select {font-size:inherit;color:inherit;line-height:inherit;}
+input,select,textarea {}
+input:focus,select:focus,textarea:focus,.ui-datepicker-trigger {}
+input:disabled,select:disabled,button:disabled,label:disabled,a:disabled,textarea:disabled,
+input.disabled,select.disabled,button.disabled,label.disabled,a.disabled,textarea.disabled {cursor:default;}
+img{}
+label,button,select,a{cursor:pointer;}
+table{border-collapse:collapse; border-spacing:0;width:100%;table-layout:fixed;}
+table th {font-weight:bold;}
+/*caption,legend {overflow:hidden;visibility:hidden;font-size:1px;text-indent:-9999px;margin-top:-1px;width:1px;height:1px;}*/
+a,a:visited {color:inherit;text-decoration:none;}
+a:hover,
+a:focus {text-decoration:none;}
+textarea{}
+button {background:none;font-family:inherit;overflow:visible;outline:0;}
+img {max-width:100%;width:100%;}
+/*dt {font-weight:bold;}*/
+body {font-size:14px;line-height:1.5;font-family:'nanum-myongjo';color:#484848;word-break:break-word;letter-spacing: -1px;}
+/*font*/
+.ws {white-space:nowrap;}
+
+/*float*/
+.fl{float:left !important;}
+.fr{float:right !important;}
+.clearb {clear:both !important;;}
+.ac{text-align:center !important;}
+.al{text-align:left !important;}
+.ar{text-align:right !important;}
+.vt{vertical-align:top !important;}
+.vm{vertical-align:middle !important;}
+.vb{vertical-align:bottom !important;}
+
+.blind{visibility:hidden !important;position:absolute !important;color:transparent !important;opacity:0 !important;filter:Alpha(Opacity=0)!important;width:1px !important;height:1px !important;font-size:1px !important;text-indent:-9999px !important;}
