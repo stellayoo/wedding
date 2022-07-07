@@ -16,11 +16,12 @@
 }
 
 
+
 /* Reset */
-body,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,form,fieldset,p,input,textarea,i,em,strong,b,a,button,th,td{margin:0;padding:0;font-style:normal;}
-h1,h2,h3,h4,h5,strong {font-weight:normal;}
+body,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,form,fieldset,p,input,textarea,em,strong,b,a,button,th,td{margin:0;padding:0;font-style:normal;}
+h1,h2,h3,h4,h5,strong,b,em {font-weight:normal;}
 h1,h2,h3,h4,h5,h6 {font-size:inherit;}
-b {}
+i,u {font-style:normal;font-family:inherit;}
 *,*:before,*:after {box-sizing:border-box;word-break: keep-all;}
 img,fieldset,iframe,button{border:0;}
 ul,li{list-style:none}
@@ -44,9 +45,15 @@ textarea{}
 button {background:none;font-family:inherit;overflow:visible;outline:0;}
 img {max-width:100%;width:100%;}
 /*dt {font-weight:bold;}*/
-body {font-size:14px;line-height:1.5;font-family:'nanum-myongjo';color:#484848;word-break:break-word;letter-spacing: -1px;}
+body {font-size:14px;line-height:1.5;font-family:'Gowun Batang', serif;color:#000;word-break:break-word;}
 /*font*/
 .ws {white-space:nowrap;}
+.dm {
+	font-family:'DM Serif Display', serif;
+}
+.gb {
+	font-family:'Gowun Batang', serif;
+}
 
 /*float*/
 .fl{float:left !important;}
