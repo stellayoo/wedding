@@ -89,7 +89,7 @@
 					<h3>김성열 <span class="bul" data-aos="zoom-out" data-aos-delay="300">💑</span> 유윤경 <strong>결혼식까지 남은시간</strong></h3>
 					<div class="d-day">
 						<span>D-Day</span>
-						<strong>98</strong>
+						<strong id="remain-time">98</strong>
 					</div>
 				</div>
 				<div class="cal">
@@ -318,6 +318,7 @@ $(document).ready(function() {
 
 	$(function (){
 		layerPopup();
+		diffDay();
 	});
 
 	var popupOpenFunc = function (target){
@@ -369,8 +370,6 @@ $(document).ready(function() {
 		spaceBetween: 20,
 		init : false
 	});
-	$('.layer-dimmed')
-
 	$('.img-list ul li button').on('click', function (){
 		var dataHref= $(this).data('href');
 		dataHref = parseInt(dataHref)	
@@ -382,7 +381,16 @@ $(document).ready(function() {
 			swiper.slideToLoop(dataHref);
 			
 		}
-	})
+	});
+	const remainTime = document.querySelector("#remain-time");
+
+	function diffDay() {
+		const masTime = new Date("2023-2-18");
+		const todayTime = new Date();
+		const diff = masTime - todayTime;
+		const diffDay = Math.floor(diff / (1000*60*60*24));
+		remainTime.innerText = diffDay + 1;
+	}
 });
 
 </script>
@@ -411,7 +419,7 @@ $(document).ready(function() {
 <script>
 	//<![CDATA[
 	// // 사용할 앱의 JavaScript 키를 설정해 주세요.
-	Kakao.init('1405c2de39ad856a4df6dbde7bbde5b8');
+	Kakao.init('0fd745cbe90ec032e9989f69ed1882fb');
 	// // 카카오링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
 	Kakao.Link.createDefaultButton({
 		container: '#kakao-link-btn',
