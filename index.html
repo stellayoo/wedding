@@ -281,7 +281,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="alert"><p>복사되었어요</p></div>
+	<div class="alert" style="display:none;"><p>복사되었어요</p></div>
 
 	<div class="layer-popup" layer-gallery>
 		<div class="layer-dimmed"></div>
@@ -302,6 +302,7 @@
 $(document).ready(function() {
 	$('.lazy').Lazy();
 	AOS.init();
+	$('.alert').removeAttr('style');
 
 	$(".copy").click(function(event){
 		var range = document.createRange();
