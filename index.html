@@ -320,6 +320,28 @@ $(document).ready(function() {
 			$('.alert').removeClass('active');
 		}, 1000)
 	});
+	// var menu2 = $('#menu-02'),
+	// 	menu3 = $('#menu-03'),
+	// 	menu2Bottom = menu2.outerHeight();
+	// $(window).scroll(function (){
+	// 	var	menu2Off = menu2.offset().top,
+	// 		windowScroll = $('html, body').scrollTop();
+	// 	console.log('menu2 ' + menu2)
+	// 	console.log('menu2Off ' + menu2Off)
+	// 	console.log('menu2Bottom ' + menu2Bottom)
+	// 	console.log('windowScroll ' + windowScroll)
+	// 	if (menu2Off < windowScroll) {
+	// 		menu2.addClass('fixed');
+	// 		// menu3.css({
+	// 		// 	'margin-top' : menu2Bottom
+	// 		// });
+	// 	} else {
+	// 		menu2.removeClass('fixed');
+	// 		// menu3.css({
+	// 		// 	'margin-top' : 0
+	// 		// });
+	// 	}
+	// })
 
 	$(function (){
 		layerPopup();
@@ -413,7 +435,7 @@ $(document).ready(function() {
 		map: map,
 		position: weddingHall,
 		icon: {
-			content: '<a class="map-marker" href="https://map.naver.com/v5/search/%EB%A9%94%EB%A6%AC%EB%B9%8C%EB%A6%AC%EC%95%84/place/1775272720?c=14099242.8203134,4492432.6964273,15,0,0,0,dh&isCorrectAnswer=true" target="_blank" data-adcr="sum_title"><img src="'+ HOME_PATH +'/common/img/marker.png" alt=""></a>',
+			content: '<a class="map-marker" href="https://map.naver.com/v5/search/%EB%A9%94%EB%A6%AC%EB%B9%8C%EB%A6%AC%EC%95%84/place/1775272720?c=14099242.8203134,4492432.6964273,15,0,0,0,dh&isCorrectAnswer=true" target="_blank" data-adcr="sum_title"><img src="'+ HOME_PATH +'/common/img/marker.svg" alt=""></a>',
 			size: new naver.maps.Size(22, 35),
 			anchor: new naver.maps.Point(11, 35)
 		}
