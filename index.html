@@ -432,14 +432,16 @@ $(document).ready(function() {
 		zoom: 13
 	}),
 	marker = new naver.maps.Marker({
+		position: position.destinationPoint(90, 15),
 		map: map,
-		position: weddingHall,
 		icon: {
-			content: '<a class="map-marker" href="https://map.naver.com/v5/search/%EB%A9%94%EB%A6%AC%EB%B9%8C%EB%A6%AC%EC%95%84/place/1775272720?c=14099242.8203134,4492432.6964273,15,0,0,0,dh&isCorrectAnswer=true" target="_blank" data-adcr="sum_title"><img src="'+ HOME_PATH +'/common/img/marker.svg" alt=""></a>',
-			size: new naver.maps.Size(22, 35),
-			anchor: new naver.maps.Point(11, 35)
+			url: HOME_PATH +'/common/img/marker.svg',
+			size: new naver.maps.Size(50, 52),
+			origin: new naver.maps.Point(0, 0),
+			anchor: new naver.maps.Point(25, 26)
 		}
 	});
+	var marker = new naver.maps.Marker(markerOptions);
 </script>
 <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
 
