@@ -426,12 +426,13 @@ $(document).ready(function() {
 <script type="text/javascript">
 	var HOME_PATH = window.HOME_PATH || '.';
 
-	var weddingHall = new naver.maps.LatLng(37.3816194, 126.6599081),
+	var weddingHall = new naver.maps.LatLng(37.3816194, 126.6599081)
+
 	map = new naver.maps.Map('map', {
 		center: weddingHall.destinationPoint(0, 0),
 		zoom: 13
 	}),
-	markerOptions  = new naver.maps.Marker({
+	markerOptions  = {
 		position: weddingHall.destinationPoint(0, 0),
 		map: map,
 		icon: {
@@ -440,7 +441,7 @@ $(document).ready(function() {
 			origin: new naver.maps.Point(0, 0),
 			anchor: new naver.maps.Point(26, 34)
 		}
-	});
+	};
 	var marker = new naver.maps.Marker(markerOptions);
 </script>
 <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
