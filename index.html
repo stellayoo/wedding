@@ -310,7 +310,6 @@ $(document).ready(function() {
 
 	$(".copy").click(function(event){
 		var range = document.createRange();
-		console.log(range.selectNode(this))
 		range.selectNode(this);
 		window.getSelection().removeAllRanges(); // clear current selection
 		window.getSelection().addRange(range); // to select text
