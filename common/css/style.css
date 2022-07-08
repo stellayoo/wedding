@@ -134,8 +134,17 @@
 .location {font-size:15px;color:#666666;margin-top:25px;text-align:right;}
 
 .content-menu > #menu-09 {background-color:#fff;border-top:4px solid #333333;border-bottom:4px solid #333333;}
-.map-wrap .map-marker {}
-.map-wrap .map-marker img {width:40px;}
+.map-wrap .map-marker {
+    display: block;
+    position: relative;
+}
+.map-wrap .map-marker img {
+    position: absolute;
+    max-width: none;
+    width: 20px;
+    right: 0;
+    bottom: 0;
+}
 .map-wrap .info {text-align:center;font-size:14px;line-height:42px;}
 
 .content-menu > #menu-10 {background-color:#fff;padding:35px 20px 60px;}
