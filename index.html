@@ -12,6 +12,7 @@
 <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 <link href="common/css/default.css" rel="stylesheet">
 <link href="common/css/style.css" rel="stylesheet">
+<link href="common/css/aos.css" rel="stylesheet">
 <title>초대합니다.</title>
 </head>
 <body>
@@ -22,15 +23,20 @@
 				<div class="intro-wrap">
 					<div class="intro">
 						<h1>
-							<div><img src="common/img/svg-23.svg" alt="23"></div>
-							<div><img src="common/img/svg-02.svg" alt="02"></div>
-							<div><img src="common/img/svg-18.svg" alt="18"></div>
+							<div data-aos-anchor="#menu-01" data-aos="fade" data-aos-delay="100"><img src="common/img/svg-23.svg" alt="23"></div>
+							<div data-aos-anchor="#menu-01" data-aos="fade" data-aos-delay="150"><img src="common/img/svg-02.svg" alt="02"></div>
+							<div data-aos-anchor="#menu-01" data-aos="fade" data-aos-delay="200"><img src="common/img/svg-18.svg" alt="18"></div>
 						</h1>
-						<p><i><span>Save the</span> <br> Wedding <br> Date</i></p>
+						<p>
+							<i>
+								<span data-aos-anchor="#menu-01" data-aos="fade" data-aos-delay="400">Save the</span>
+								<u data-aos-anchor="#menu-01" data-aos="fade" data-aos-delay="500"> <br> Wedding <br> Date</u>
+							</i>
+						</p>
 					</div>
 					<div class="desc">
-						<h2><div>성열</div><span>🖤</span><div>윤경</div></h2>
-						<p>인천 송도 메리빌리아  <br> 2023. 02. 18  토요일 오후 1:50</p>
+						<h2 data-aos-anchor="#menu-01" data-aos="fade" data-aos-delay="700"><div>성열</div><span data-aos-anchor="#menu-01" data-aos="zoom-out" data-aos-delay="1000">🖤</span><div>윤경</div></h2>
+						<p data-aos-anchor="#menu-01" data-aos="fade" data-aos-delay="700">인천 송도 메리빌리아  <br> 2023. 02. 18  토요일 오후 1:50</p>
 					</div>
 				</div>
 			</div>
@@ -80,7 +86,7 @@
 			</div>
 			<div id="menu-04">
 				<div class="d-day-wrap">
-					<h3>김성열 <span class="bul">💑</span> 유윤경 <strong>결혼식까지 남은시간</strong></h3>
+					<h3>김성열 <span class="bul" data-aos="zoom-out" data-aos-delay="300">💑</span> 유윤경 <strong>결혼식까지 남은시간</strong></h3>
 					<div class="d-day">
 						<span>D-Day</span>
 						<strong>98</strong>
@@ -295,6 +301,7 @@
 <script>
 $(document).ready(function() {
 	$('.lazy').Lazy();
+	AOS.init();
 
 	$(".copy").click(function(event){
 		var range = document.createRange();
@@ -307,9 +314,6 @@ $(document).ready(function() {
 		setTimeout(function (){
 			$('.alert').removeClass('active');
 		}, 1000)
-	});
-	$('#menu-01 > .intro > *').each(function() {
-		$(this).addClass('active')
 	});
 
 	$(function (){
@@ -382,9 +386,8 @@ $(document).ready(function() {
 });
 
 </script>
+
 <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=i9ce5oqadg&callback=initMap"></script>
-
-
 <script type="text/javascript">
 	var HOME_PATH = window.HOME_PATH || '.';
 
