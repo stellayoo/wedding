@@ -161,9 +161,12 @@
 .footer .copyright {color:#fff;text-align:center;margin-top:70px;}
 .footer .link {}
 .footer .link ul {display:flex;align-items:center;justify-content:center;}
-.footer .link ul li {margin:0 50px;}
+.footer .link ul li {position:relative;margin:0 50px;text-align:center;}
 .footer .link ul li img {display:block;width:40px;margin:0 auto 10px;}
-.footer .link ul li button {color:#fff;text-align:center;}
+.footer .link ul li button {font-size:0;text-indent:-9999px;}
+.footer .link ul li button:after {display:block;content:'';position:absolute;left:0;top:0;width:100%;height:100%;}
+.footer .link ul li span {display:block;color:#fff;text-align:center;}
+
 @media (orientation:landscape) {
 	.intro-wrap .intro h1 {display:flex;width:200px;}
 	.intro-wrap .intro h1 div {padding:0 10px;box-sizing:border-box;}
