@@ -320,28 +320,28 @@ $(document).ready(function() {
 			$('.alert').removeClass('active');
 		}, 1000)
 	});
-	// var menu2 = $('#menu-02'),
-	// 	menu3 = $('#menu-03'),
-	// 	menu2Bottom = menu2.outerHeight();
-	// $(window).scroll(function (){
-	// 	var	menu2Off = menu2.offset().top,
-	// 		windowScroll = $('html, body').scrollTop();
-	// 	console.log('menu2 ' + menu2)
-	// 	console.log('menu2Off ' + menu2Off)
-	// 	console.log('menu2Bottom ' + menu2Bottom)
-	// 	console.log('windowScroll ' + windowScroll)
-	// 	if (menu2Off < windowScroll) {
-	// 		menu2.addClass('fixed');
-	// 		// menu3.css({
-	// 		// 	'margin-top' : menu2Bottom
-	// 		// });
-	// 	} else {
-	// 		menu2.removeClass('fixed');
-	// 		// menu3.css({
-	// 		// 	'margin-top' : 0
-	// 		// });
-	// 	}
-	// })
+	var menu2 = $('#menu-02'),
+		menu3 = $('#menu-03'),
+		menu2Bottom = menu2.outerHeight()
+	$(window).scroll(function (){
+			menu2Off = menu2.offset().top,
+			windowScroll = $('html, body').scrollTop();
+		console.log('menu2 ' + menu2)
+		console.log('menu2Off ' + menu2Off)
+		console.log('menu2Bottom ' + menu2Bottom)
+		console.log('windowScroll ' + windowScroll)
+		if (menu2Off < windowScroll) {
+			menu2.addClass('fixed');
+			menu3.css({
+				'margin-top' : menu2Bottom
+			});
+		} else {
+			menu2.removeClass('fixed');
+			menu3.css({
+				'margin-top' : 0
+			});
+		}
+	})
 
 	$(function (){
 		layerPopup();
@@ -426,23 +426,24 @@ $(document).ready(function() {
 <script type="text/javascript">
 	var HOME_PATH = window.HOME_PATH || '.';
 
-	var weddingHall = new naver.maps.LatLng(37.3816194, 126.6599081)
-
+	var weddingHall = new naver.maps.LatLng(37.3816194, 126.6599081),
 	map = new naver.maps.Map('map', {
 		center: weddingHall.destinationPoint(0, 0),
 		zoom: 13
 	}),
-	markerOptions  = {
-		position: weddingHall.destinationPoint(0, 0),
+	marker = new naver.maps.Marker({
 		map: map,
+		position: weddingHall,
 		icon: {
-			url: HOME_PATH +'/common/img/marker.svg',
-			size: new naver.maps.Size(52, 68),
-			origin: new naver.maps.Point(0, 0),
-			anchor: new naver.maps.Point(26, 34)
+			content: '<a class="map-marker" href="https://map.naver.com/v5/search/%EB%A9%94%EB%A6%AC%EB%B9%8C%EB%A6%AC%EC%95%84/place/1775272720?c=14099242.8203134,4492432.6964273,15,0,0,0,dh&isCorrectAnswer=true" target="_blank" data-adcr="sum_title"><img src="'+ HOME_PATH +'/common/img/marker.svg" alt=""></a>',
+			size: new naver.maps.Size(22, 35),
+			anchor: new naver.maps.Point(11, 35)
 		}
-	};
-	var marker = new naver.maps.Marker(markerOptions);
+	});
+</script>
+<script>
+	// loveyoo24
+	// user0102!
 </script>
 <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
 
@@ -457,10 +458,10 @@ $(document).ready(function() {
 		content: {
 			title: '초대합니다.',
 			description: '2023년 2월 18일 김성열 · 유윤경 결혼식에 초대합니다.',
-			imageUrl: 'https://stellayoo.github.io/wedding/common/img/main.png',
+			imageUrl: 'https://www.yeolyoon.site/common/img/main.png',
 			link: {
-				mobileWebUrl: 'https://stellayoo.github.io/wedding/',
-				webUrl: 'https://stellayoo.github.io/wedding/'
+				mobileWebUrl: 'https://www.yeolyoon.site/',
+				webUrl: 'https://www.yeolyoon.site/'
 			}
 		}
 	});
