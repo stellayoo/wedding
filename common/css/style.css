@@ -33,7 +33,7 @@
 .content-menu > * {position:sticky;background-color:#fff;}
 
 .content-menu > #menu-01 {top:0;width:100%;height:100vh;z-index:-1;background-color:#E6E7E1;}
-.intro-wrap {display:flex;align-items:center;justify-content:space-around;flex-direction:column;height:inherit;padding: 20px 40px 40px;}
+.intro-wrap {display:flex;align-items:center;justify-content:space-around;flex-direction:column;height:inherit;padding:20px 40px 40px;}
 .intro-wrap .intro h1 {text-align:center;width:160px;margin:0 auto;}
 .intro-wrap .intro div {position:relative;}
 .intro-wrap .intro div:last-child:after {display:block;content:'';position:absolute;left:0;bottom:0;width:100%;height:1px;background-color:#707070;}
@@ -48,8 +48,8 @@
 
 
 .content-menu > #menu-02 {top:0;}
-.main-visual {}
-.main-visual img {display:block;}
+.main-visual {display:flex;align-items:center;justify-content:center;max-width:768px;margin:0 auto;height:100vh;overflow:hidden;}
+.main-visual img {object-fit:contain;}
 
 .content-menu > #menu-03 {background-color:#333333;color:#fff;text-align:center;padding:60px 30px 90px;}
 #menu-03 p {font-size:15px;line-height:26px;}
