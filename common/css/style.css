@@ -75,7 +75,7 @@
 .content-menu > #menu-05 {}
 .img-list {}
 .img-list ul {display:flex;flex-wrap:wrap;}
-.img-list li {flex:1 0 calc(100% / 3);max-width:calc(100% / 3)}
+.img-list li {flex:1 0 calc(100% / 3);max-width:calc(100% / 3);}
 .img-list li button {display:block;width:100%;}
 .img-list li img {display:block;aspect-ratio:1;}
 .img-list > p {text-align:center;font-size:14px;line-height:42px;}
