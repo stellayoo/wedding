@@ -47,9 +47,9 @@
 .intro-wrap .desc p {font-size:16px;color:#666;text-align:center;}
 
 
-.content-menu > #menu-02 {top:0;}
+.content-menu > #menu-02 {top:0;background-color:rgba(0, 0, 0, 0.5);}
 .main-visual {display:flex;align-items:center;justify-content:center;max-width:768px;margin:0 auto;height:100vh;overflow:hidden;}
-.main-visual img {object-fit:contain;}
+.main-visual img {object-fit: contain;width: 100%;height: 100%;}
 
 .content-menu > #menu-03 {background-color:#333333;color:#fff;text-align:center;padding:60px 30px 90px;}
 #menu-03 p {font-size:15px;line-height:26px;}
