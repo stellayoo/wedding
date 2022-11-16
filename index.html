@@ -326,10 +326,6 @@ $(document).ready(function() {
 	$(window).scroll(function (){
 		menu2Off = menu2.offset().top,
 		windowScroll = $('html, body').scrollTop();
-		console.log('menu2 ' + menu2)
-		console.log('menu2Off ' + menu2Off)
-		console.log('menu2Bottom ' + menu2Bottom)
-		console.log('windowScroll ' + windowScroll)
 		if (menu2Off < windowScroll) {
 			menu2.addClass('fixed');
 			// menu3.css({
