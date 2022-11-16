@@ -43,8 +43,20 @@
 .intro-wrap .intro p i span {font-size:40px;}
 .intro-wrap .desc {margin-top:40px;}
 .intro-wrap .desc h2 {display:flex;font-size:20px;align-items:center;justify-content:center;}
-.intro-wrap .desc h2 span {padding:0 20px;font-size:10px;}
-.intro-wrap .desc h2 span.aos.init {}
+.intro-wrap .desc h2 span {padding:0 20px;font-size:15px;}
+.intro-wrap .desc h2 span.aos-init {animation:boomb 1s ease-in-out;animation-delay:1.7s;}
+@keyframes boomb{
+	0% {
+		transform:scale(0) translateY(0);
+		opacity:1;
+	}
+	100% {
+		transform:scale(100) translateY(-100%);
+		opacity:0;
+	}
+
+}
+
 .intro-wrap .desc p {font-size:16px;color:#666;text-align:center;}
 
 
