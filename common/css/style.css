@@ -44,6 +44,7 @@
 .intro-wrap .desc {margin-top:40px;}
 .intro-wrap .desc h2 {display:flex;font-size:20px;align-items:center;justify-content:center;}
 .intro-wrap .desc h2 span {padding:0 20px;font-size:10px;}
+.intro-wrap .desc h2 span.aos.init {}
 .intro-wrap .desc p {font-size:16px;color:#666;text-align:center;}
 
 

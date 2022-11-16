@@ -39,7 +39,7 @@
 						</p>
 					</div>
 					<div class="desc">
-						<h2 data-aos-anchor="#menu-01" data-aos="fade" data-aos-delay="1700"><div>성열</div><span data-aos-anchor="#menu-01" data-aos="zoom-out" data-aos-delay="11000">🖤</span><div>윤경</div></h2>
+						<h2 data-aos-anchor="#menu-01" data-aos="fade" data-aos-delay="1700"><div>성열</div><span data-aos-anchor="#menu-01" data-aos="zoom-out" data-aos-delay="11000">&#128145;</span><div>윤경</div></h2>
 						<p data-aos-anchor="#menu-01" data-aos="fade" data-aos-delay="1700">인천 송도 메리빌리아  <br> 2023. 02. 18  토요일 오후 1:50</p>
 					</div>
 				</div>
@@ -324,22 +324,22 @@ $(document).ready(function() {
 		menu3 = $('#menu-03'),
 		menu2Bottom = menu2.outerHeight()
 	$(window).scroll(function (){
-			menu2Off = menu2.offset().top,
-			windowScroll = $('html, body').scrollTop();
+		menu2Off = menu2.offset().top,
+		windowScroll = $('html, body').scrollTop();
 		console.log('menu2 ' + menu2)
 		console.log('menu2Off ' + menu2Off)
 		console.log('menu2Bottom ' + menu2Bottom)
 		console.log('windowScroll ' + windowScroll)
 		if (menu2Off < windowScroll) {
 			menu2.addClass('fixed');
-			menu3.css({
-				'margin-top' : menu2Bottom
-			});
+			// menu3.css({
+			// 	'margin-top' : menu2Bottom
+			// });
 		} else {
 			menu2.removeClass('fixed');
-			menu3.css({
-				'margin-top' : 0
-			});
+			// menu3.css({
+			// 	'margin-top' : 0
+			// });
 		}
 	})
 
